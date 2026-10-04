@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MHT-CET PCM 2026-27 Test Series | EnrollEngineer</title>
+  
+  <!-- Modern Clean Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Plain CSS Design System -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==================== HEADER NAVIGATION ==================== -->
+  <header class="navbar-header" id="navbar">
+    <div class="navbar-container">
+      <!-- Brand Logo -->
+      <a href="#landing" class="brand-logo" aria-label="EnrollEngineer Home">
+        <div class="brand-logo-icon">EE</div>
+        <div class="brand-logo-text">Enroll<span>Engineer</span></div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="https://www.enrollengineer.com/" class="nav-link" target="_blank" rel="noopener">Home</a></li>
+          <li><a href="https://www.enrollengineer.com/#about" class="nav-link" target="_blank" rel="noopener">About</a></li>
+          <li><a href="https://www.enrollengineer.com/#success" class="nav-link" target="_blank" rel="noopener">Success Stories</a></li>
+          <li><a href="https://www.enrollengineer.com/#contact" class="nav-link" target="_blank" rel="noopener">Contact Us</a></li>
+          <li><a href="https://www.enrollengineer.com/#courses" class="nav-link" target="_blank" rel="noopener">Our Courses</a></li>
+          <li><a href="https://www.enrollengineer.com/#batch2026" class="nav-link" target="_blank" rel="noopener">Batch 2026</a></li>
+          <li><a href="https://www.enrollengineer.com/#predictor" class="nav-link" target="_blank" rel="noopener">Percentile Predictor</a></li>
+          <li><a href="https://www.enrollengineer.com/#eligibility" class="nav-link" target="_blank" rel="noopener">Check Eligibility</a></li>
+          <!-- Newly Introduced Test Series Section -->
+          <li>
+            <a href="#landing" class="nav-link nav-test-series active" id="nav-test-series-btn">
+              <span>Test Series</span>
+              <span class="nav-badge-new">NEW</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="https://www.enrollengineer.com/" class="mobile-nav-link" target="_blank" rel="noopener">Home</a></li>
+        <li><a href="https://www.enrollengineer.com/#about" class="mobile-nav-link" target="_blank" rel="noopener">About</a></li>
+        <li><a href="https://www.enrollengineer.com/#success" class="mobile-nav-link" target="_blank" rel="noopener">Success Stories</a></li>
+        <li><a href="https://www.enrollengineer.com/#contact" class="mobile-nav-link" target="_blank" rel="noopener">Contact Us</a></li>
+        <li><a href="https://www.enrollengineer.com/#courses" class="mobile-nav-link" target="_blank" rel="noopener">Our Courses</a></li>
+        <li><a href="https://www.enrollengineer.com/#batch2026" class="mobile-nav-link" target="_blank" rel="noopener">Batch 2026</a></li>
+        <li><a href="https://www.enrollengineer.com/#predictor" class="mobile-nav-link" target="_blank" rel="noopener">Percentile Predictor</a></li>
+        <li><a href="https://www.enrollengineer.com/#eligibility" class="mobile-nav-link" target="_blank" rel="noopener">Check Eligibility</a></li>
+        <li>
+          <a href="#landing" class="mobile-nav-link active" id="mobile-test-series-link" style="color: var(--color-blue); font-weight: 700;">
+            ★ Test Series (MHT-CET PCM)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
+  <main id="app-content" class="main-content" role="main">
+    <!-- Dynamic views (Landing, Dashboard, Details, Test, Result) render here -->
+  </main>
+
+  <!-- ==================== SUBMISSION CONFIRMATION MODAL ==================== -->
+  <div class="modal-overlay" id="submit-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <h3 class="modal-title" id="modal-title">Submit Test</h3>
+      <p style="color: var(--color-muted); font-size: 0.95rem; margin-bottom: 16px;">
+        Are you sure you want to finish your test? Once submitted, your answers cannot be altered.
+      </p>
+      
+      <!-- Summary Table inside Modal -->
+      <div id="modal-summary-content" style="background: var(--bg-subtle); padding: 14px; border-radius: var(--radius-md); font-size: 0.9rem; margin-bottom: 20px;">
+        <!-- Dynamically injected stats -->
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="modal-resume-btn">Resume Test</button>
+        <button class="btn btn-primary" id="modal-confirm-btn">Confirm & Finish</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 8px;">
+            <div class="brand-logo-icon">EE</div>
+            <div class="brand-logo-text">Enroll<span>Engineer</span></div>
+          </div>
+          <p>
+            Guiding engineering dreams and shaping success for Maharashtra CET aspirants with structured mock test series and comprehensive analytics.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Test Series</h5>
+          <ul>
+            <li><a href="#dashboard">All Mock Tests</a></li>
+            <li><a href="#dashboard">Unit Tests (UT1 - UT12)</a></li>
+            <li><a href="#dashboard">Full Prelims (1 - 5)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Existing Portal</h5>
+          <ul>
+            <li><a href="https://www.enrollengineer.com/" target="_blank" rel="noopener">Home</a></li>
+            <li><a href="https://www.enrollengineer.com/#courses" target="_blank" rel="noopener">Our Courses</a></li>
+            <li><a href="https://www.enrollengineer.com/#batch2026" target="_blank" rel="noopener">Batch 2026</a></li>
+            <li><a href="https://www.enrollengineer.com/#predictor" target="_blank" rel="noopener">Percentile Predictor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="https://www.enrollengineer.com/#contact" target="_blank" rel="noopener">Contact Helpdesk</a></li>
+            <li><a href="https://www.enrollengineer.com/#about" target="_blank" rel="noopener">About EnrollEngineer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EnrollEngineer. All rights reserved. College EDI Project Prototype.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <!-- 1. Data Store -->
+  <script src="js/data.js"></script>
+  <!-- 2. Application Architecture & Router -->
+  <script src="js/app.js"></script>
+</body>
+</html>
